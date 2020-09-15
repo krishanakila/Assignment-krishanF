@@ -24,12 +24,12 @@ https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/
 
 # Best practices used for this project.
 
-Scss File Architecture Structure (ITCSS)
-A curated list of awesome ITCSS articles, and resources.
-
-![image](https://user-images.githubusercontent.com/9035990/93185438-066b4780-f75b-11ea-935b-afe9fb78b062.png)
+1) Scss File Architecture Structure (ITCSS)
+   A curated list of awesome ITCSS articles, and resources.
 
 ![image](https://user-images.githubusercontent.com/9035990/93185723-68c44800-f75b-11ea-9667-62d68f441426.png)
+
+2) CSS methodology - Blocks, Elements and Modifiers [BEM] 
 
 
 
