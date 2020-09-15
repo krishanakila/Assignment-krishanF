@@ -20,6 +20,7 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 
 # Adobe XD link - Prototype 
 
+Design Prototype :
 https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/
 
 All Pages :
