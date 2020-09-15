@@ -20,7 +20,7 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 
 # Adobe XD link - Prototype 
 
-Design Prototype :
+Design Journey :
 https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/
 
 All Pages :
@@ -37,4 +37,6 @@ https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/grid
 
 ![image](https://user-images.githubusercontent.com/9035990/93186078-d40e1a00-f75b-11ea-9948-ec5050f83f98.png)
 
+# 3) Material Component - Ex:(Input feilds, calender, dropdown and material colors)
+https://material.angular.io/components/input/overview
 
