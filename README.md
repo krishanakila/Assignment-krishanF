@@ -1,6 +1,6 @@
 # Assignment-krishanF-
 
-This project was generated with Angular CLI version 8.3.23.
+This project was generated with Angular CLI version 10.1.1.
 
 # My PC Version
 
@@ -10,7 +10,10 @@ v12.14.1
 $ npm -v
 6.13.4
 
+# To Run the project
 
+1) npm i
+2) ng serve
 
 Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
