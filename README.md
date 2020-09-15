@@ -31,5 +31,6 @@ https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/
 
 2) CSS methodology - Blocks, Elements and Modifiers [BEM] 
 
+![image](https://user-images.githubusercontent.com/9035990/93186078-d40e1a00-f75b-11ea-9948-ec5050f83f98.png)
 
 
