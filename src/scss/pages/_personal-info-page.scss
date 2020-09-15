@@ -1,0 +1,47 @@
+/*Personal-info-page--Styles*/
+
+.mat-form-field{
+  width: 100%;
+  margin-top: 0;
+}
+
+.footer-section-btn{
+  @include flex-box-container(column, null, null, flex-end);
+  margin-top: $gap-m-medium;    
+}
+
+.main-wrapper__inner-row--gender{
+  @include flex-box-container(column, null, center, null);  
+   
+    .mat-radio-button{
+        margin-right: $gap-m-x-small;
+    }    
+}
+
+.main-wrapper__body{
+  background-image: url('../../assets/images/thank-you.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
+.main-wrapper__bottom-row-title{
+  @include flex-box-container(row, null, space-between, center);  
+}
+
+.main-wrapper__left{
+  margin-left: $gap-m-xx-large;  
+}
+
+.main-wrapper__top-row-title{
+  font-size: $base-font--small;
+  font-weight: $base-font-weight--strong;
+  color: $color-secondary;
+}
+
+.main-wrapper__bottom-row-title{
+  font-size: $base-font--x-small;
+  font-weight: $base-font-weight--normal;
+  color: $color-secondary; 
+}

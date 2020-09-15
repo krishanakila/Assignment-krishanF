@@ -1,0 +1,38 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+/* Added Global Style Files Here and Import Other Style Files */
+
+
+// SETTINGS Global Files
+@import "scss/settings/color.settings";
+@import "scss/settings/font.settings";
+@import "scss/settings/global.settings";
+
+// TOOLS Global Files
+@import "scss/tools/mixins/css-grid.mixins";
+@import "scss/tools/mixins/flexbox.mixins";
+@import "scss/tools/mixins/browser-hacks.mixins";
+
+// GENERIC Global Files
+@import "scss/generic/normalize.generic";
+@import "scss/generic/reset.generic";
+@import "scss/generic/typography.generic";
+
+// OBJECTS --atoms
+@import 'scss/object/atoms/button.atom';
+
+// LAYOUTS Global Files
+@import 'scss/layouts/page.layout';
+
+//COMPONENTS Global Files
+@import 'scss/components/header';
+@import 'scss/components/stepper';
+@import 'scss/components/footer';
+@import 'scss/components/modal';
+
+//Pages Files
+@import 'scss/pages/personal-info-page';
+
+// UTILITIES Global Files
+@import 'scss/utilities/spacing.utils';

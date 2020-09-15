@@ -1,0 +1,22 @@
+/* Master layout */
+
+body {
+  background-color: $color-white;
+}
+
+.main-wrapper {
+  
+}
+
+.main-wrapper__inner {
+    &.col-3g{
+  @include grid-container();
+  @include grid-template-columns(1fr 1fr 1fr, 20px);
+  @include grid-autoflow(row, 3, 1);  
+ }
+}
+
+.main-wrapper__inner-row {
+    
+}
+

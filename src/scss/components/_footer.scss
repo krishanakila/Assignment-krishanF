@@ -1,0 +1,34 @@
+//footer Component
+
+.footer-section{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: $color-secondary;
+   @include flex-box-container(row, null, center, center);
+   min-height: 30px;
+   color: $color-primary;  
+   font-size: $base-font--small; 
+   z-index: 1;    
+}
+
+.footer-section-btn__title{
+   color: $color-secondary;  
+   font-size: $base-font--x-small;  
+   margin-bottom: $gap-m-x;
+}
+
+.footer-section-btn__action{
+   @include flex-box-container(row, null, space-between, center);
+}
+
+.footer-section-btn__done{
+     @include flex-box-container(row, null, center, center);  
+    
+  .a-btn--primary{
+      margin-right: $gap-m-x;
+    }
+}
+
+//footer--END

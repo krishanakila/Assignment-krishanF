@@ -1,0 +1,355 @@
+
+<!--Header--START-->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"> 
+     <!--<div class="navbar-brand-logo"></div>-->
+     <div class="navbar-brand-title">2020 Census Questionnaire</div>      
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <mat-icon class="info-icon" aria-hidden="false" aria-label="Example info icon" (click)="openDialog()">info</mat-icon>    
+  </div>
+</nav>
+<!--Header--END-->
+
+<!--Stepper--START-->
+<mat-horizontal-stepper #stepper>
+  <mat-step [stepControl]="firstFormGroup" errorMessage="Complete the form">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Personal info</ng-template>
+            
+        <!--Header-section--START-->
+        <div class="header-section u-mt u-mb">
+          <div class="header-section__main-title">So far so good. Let's talk about your self.</div>
+          <div class="header-section__sub-title">Please provide information for each person living here. If there is someone living here who pays the rent or owns this residence, start by listing him or her as Person 1. If the owner or the person who pays the rent does not 
+live here, start by listing any adult living here as Person 1.</div>
+        </div>
+        <!--Header-section--END-->
+        
+        <!--Main-Wrapper--START-->
+        <div class="main-wrapper">
+            <div class="main-wrapper__inner col-3g">
+                
+                <div class="main-wrapper__inner-row">
+                   <mat-form-field appearance="outline">
+                   <mat-label>Number of People </mat-label>
+                   <input type="number" matInput placeholder="Enter number of people " formControlName="firstCtrl" required>
+                    </mat-form-field>
+                </div>
+                <div class="main-wrapper__inner-row"></div>
+                <div class="main-wrapper__inner-row"></div>            
+                
+                <div class="main-wrapper__inner-row">
+                <mat-form-field appearance="outline">
+                   <mat-label>First Name</mat-label>
+                   <input matInput placeholder="First name" formControlName="firstCtrl" required>
+                 </mat-form-field>
+                </div>            
+                <div class="main-wrapper__inner-row">
+                <mat-form-field appearance="outline">
+                   <mat-label>Middle Name</mat-label>
+                   <input matInput placeholder="Middle name" formControlName="firstCtrl" required>
+                 </mat-form-field>
+                </div> 
+                <div class="main-wrapper__inner-row">
+                <mat-form-field appearance="outline">
+                   <mat-label>Last Name</mat-label>
+                   <input matInput placeholder="Last name" formControlName="firstCtrl" required>
+                 </mat-form-field>
+                </div> 
+                
+                <div class="main-wrapper__inner-row">
+                <mat-form-field appearance="outline">
+                  <mat-label>Country</mat-label>
+                  <mat-select >
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">Srilanka</mat-option>
+                    <mat-option value="option2">Australia</mat-option>
+                    <mat-option value="option3">England</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                </div>
+                <div class="main-wrapper__inner-row main-wrapper__inner-row--gender">
+                <label id="example-radio-group-label">Select your Gender:</label>
+                <mat-radio-group aria-label="Select an option">
+                  <mat-radio-button value="1">Male</mat-radio-button>
+                  <mat-radio-button value="2">Female</mat-radio-button>
+                </mat-radio-group>
+                </div>
+                <div class="main-wrapper__inner-row"></div>
+                
+                <div class="main-wrapper__inner-row">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Date of Birth</mat-label>
+                      <input matInput [matDatepicker]="picker">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="main-wrapper__inner-row">
+                   <mat-form-field appearance="outline">
+                   <mat-label>Age</mat-label>
+                   <input type="number" matInput placeholder="Enter your age" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                </div>
+                <div class="main-wrapper__inner-row">
+                <form class="example-form">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Telephone</mat-label>
+                    <span matPrefix>+1 &nbsp;</span>
+                    <input type="tel" matInput placeholder="011-2236-635">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                </form>
+                </div>                 
+                                
+            </div>    
+        </div>
+        <!--Main-Wrapper--END-->
+        
+        <!--Footer-Section-Btn--START-->
+        <div class="footer-section-btn">
+        <p class="footer-section-btn__title">Go To Next Step Click Next</p>
+        <button mat-button matStepperNext class="a-btn--primary">Next</button>
+        </div>
+        <!--Footer-Section-Btn--END-->
+        
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" errorMessage="Complete the form">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Census Survey</ng-template>
+            
+        <!--Header-section--START-->
+        <div class="header-section u-mt u-mb">
+          <div class="header-section__main-title">Please Complate Your 2020 Census Questionnaire.</div>
+          <div class="header-section__sub-title">Before you answer Question 1, count the people living in this house, apartment, or mobile home using our guidelines.</div>
+        </div>
+        <!--Header-section--END-->  
+        
+        <!--Main-Wrapper--START-->
+        <div class="main-wrapper">
+           <div class="main-wrapper__inner"> 
+               <div class="main-wrapper__inner-row"> 
+                   <div class="main-wrapper__top-row-title">
+                       1) Were there any additional people staying here on April 1, 2020 that you did not include in Question 1?
+                   </div>
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Children, related or unrelated, such as newborn babies,
+grandchildren, or foster children 
+                       </div>
+                       <div class="main-wrapper__right">
+                           <mat-slide-toggle formControlName="secondCtrl"
+               required></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Relatives, such as adult children, cousins, or in-laws 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Nonrelatives, such as roommates or live-in babysitters
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          People staying here temporarily
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                         No additional people
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>                    
+                </div>
+               <div class="main-wrapper__inner-row"> 
+                   <div class="main-wrapper__top-row-title">
+                       2) Is this house, apartment, or mobile home?
+                   </div>
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Owned by you or someone in this household with a mortgage or loan? Include home equity loans.
+                       </div>
+                       <div class="main-wrapper__right">
+                           <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Owned by you or someone in this household free and clear
+(without a mortgage or loan)?
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Rented?
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Occupied without payment of rent?
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>                                        
+                </div>
+               <div class="main-wrapper__inner-row"> 
+                   <div class="main-wrapper__top-row-title">
+                       3) Is Person 1 of Hispanic, Latino, or Spanish origin?
+                   </div>
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          No, not of Hispanic, Latino, or Spanish origin 
+                       </div>
+                       <div class="main-wrapper__right">
+                           <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          No, not of Hispanic, Latino, or Spanish origin 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Yes, Puerto Rican 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Yes, Cuban 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                         Yes, another Hispanic, Latino, or Spanish origin – Print, for example, Salvadoran, Dominican, Colombian, Guatemalan, Spaniard, Ecuadorian, etc. 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>                    
+                </div>  
+               <div class="main-wrapper__inner-row"> 
+                   <div class="main-wrapper__top-row-title">
+                       4) What is Person 1’s race? 
+                   </div>
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          White – Print, for example, German, Irish, English, Italian, Lebanese, Egyptian 
+                       </div>
+                       <div class="main-wrapper__right">
+                           <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Black or African Am. – Print, for example, African American,
+Jamaican, Haitian, Nigerian, Ethiopian, Somali 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>  
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          American Indian or Alaska Native 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                          Chinese 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div> 
+                   <div class="main-wrapper__bottom-row-title">
+                       <div class="main-wrapper__left">
+                         Asian Indian 
+                       </div>
+                       <div class="main-wrapper__right">
+                          <mat-slide-toggle></mat-slide-toggle>
+                       </div>
+                  </div>                    
+                </div> 
+           </div>
+        </div>
+        <!--Main-Wrapper--END-->
+        
+        <!--Footer-Section-Btn--START-->
+        <div class="footer-section-btn">
+        <p class="footer-section-btn__title">Go To Last Step Click Next</p>
+            <div class="footer-section-btn__action">
+              <button mat-button matStepperPrevious class="a-btn--secondary">Back</button>
+              <button mat-button matStepperNext class="a-btn--primary">Next</button>
+            </div>        
+        </div>
+        <!--Footer-Section-Btn--END-->
+        
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+      
+        <!--Header-section--START-->
+        <div class="header-section u-mt u-mb">
+           <h1 class="header-section__basic-title">You Are Now Done.</h1>
+          <div class="header-section__sub-title">2020 Census Questionnaire.</div>
+        </div>
+        <!--Header-section--END-->
+      
+        <!--Main-Wrapper--START-->
+        <div class="main-wrapper">          
+          <div class="main-wrapper__body">
+          </div>
+        </div>
+        <!--Main-Wrapper--START-->
+    
+        <div class="footer-section-btn__done">      
+      <button mat-button class="a-btn--secondary" (click)="stepper.reset()">Reset</button>
+      <button mat-button class="a-btn--primary">Submit</button>
+    </div>
+      
+  </mat-step>
+</mat-horizontal-stepper>
+<!--Stepper--START-->
+

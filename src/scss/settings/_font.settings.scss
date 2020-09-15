@@ -1,0 +1,33 @@
+/* Font Sizes, Family and Weight Variables */
+
+
+// Global Typography Variables
+$base-font--x:             10px !default;
+$base-font--x-small:       12px !default;
+$base-font--small:         14px !default;
+$base-font--medium:        16px !default;
+$base-font--x-medium:      18px !default;
+$base-font--large:         20px !default;
+$base-font--x-large:       22px !default;
+$base-font--xx-large:      24px !default;
+$base-font--xxx-large:     26px !default;
+$base-font-size--huge:     30px !default;
+$base-font-size--x-huge:   36px !default;
+$base-font-size--xx-huge:  40px !default;
+$base-font-size--xxx-huge: 50px !default;
+
+
+// Primary Typography Variables
+$base-font-size--primary:  80px !default;
+$base-font-size--secondary:70px !default;
+
+
+// Font Family Variables
+$font-family--primary:     'TeXGyreAdventor', Arial, sans-serif !default;
+$font-family--secondary:   'Poppins' !default;
+
+
+// Font Weight Variables
+$base-font-weight--normal:  400 !default;
+$base-font-weight--strong:  500 !default;
+$base-font-weight--bold:    600 !default;

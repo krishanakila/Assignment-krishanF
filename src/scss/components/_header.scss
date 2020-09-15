@@ -1,0 +1,73 @@
+//Header Component
+
+//Main-Header--START
+
+.navbar-brand{
+  @include flex-box-container(row, null, null, center);
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.navbar-brand-logo{
+  background-image: url('../../assets/images/logo-new.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;   
+  width: 50px;
+}
+
+.navbar-brand-title{
+  color: $color-primary; 
+  margin-left: $gap-m-x-small; 
+  font-weight: $base-font-weight--strong; 
+  font-size: $base-font--x-medium;    
+}
+
+.navbar{
+  min-height: 70px;
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: $color-white;
+  box-shadow: 0px 2px 6px #0000000A;
+  border-bottom: 1px solid $color-gray;  
+}
+//Main-Header--END
+
+
+//Sub-Main-Header--START
+
+.header-section{
+  @include flex-box-container(column, null, center, center);    
+  border-bottom: 1px solid $color-gray;
+}
+
+.header-section__main-title{
+  font-size: $base-font--xx-large; 
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-weight: $base-font-weight--strong;    
+}
+
+.header-section__sub-title{
+  font-size: $base-font--x-small; 
+  color: $color-secondary; 
+  text-align: center;
+  padding-bottom: $gap-p-x-medium;
+}
+
+.header-section__basic-title{
+  @include flex-box-container(row, null, center, center);  
+  color: $color-primary;
+  text-transform: uppercase;    
+}
+
+.info-icon{
+  color: $color-secondary;
+  cursor: pointer;
+    &:hover{
+      color: $color-primary;  
+    }
+}
+
+//Sub-Main-Header--END

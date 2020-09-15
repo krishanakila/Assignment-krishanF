@@ -1,0 +1,20 @@
+/* Browsers Specific Hack */
+
+@mixin only-firefox(){
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
+
+@mixin only-safari(){
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) {
+    @content;
+  }}
+}
+
+@mixin only-ie() {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

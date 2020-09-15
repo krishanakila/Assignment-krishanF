@@ -1,0 +1,32 @@
+//  -------------------------------------------------
+//  Button Styling
+//  -------------------------------------------------
+
+$a-btn--padding: 8px !default;
+$a-btn--padding-sm: 20px !default;
+$a-btn--border-radius: 4px !default;
+$a-btn--height: 50px !default;
+
+
+
+// Basic box button object
+
+.a-btn--primary {
+  background-color: $color-primary;  
+  width: 80px;
+  margin-left: $gap-m-x !important;
+  &:focus{
+    outline: none !important;
+  }
+}
+
+.a-btn--secondary {
+  background-color: $color-secondary;  
+  color:$color-white;    
+  width: 80px;
+  &:focus{
+    outline: none !important;
+  }     
+}
+
+
