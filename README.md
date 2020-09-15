@@ -1,4 +1,4 @@
-# Assignment-krishanF-
+# Assignment-krishanF
 
 This project was generated with Angular CLI version 10.1.1.
 
@@ -17,3 +17,7 @@ $ npm -v
 
 Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+# Adobe XD link - Prototype 
+
+https://xd.adobe.com/view/44891c9b-6ab5-4702-9400-f20096ce946d-11da/
