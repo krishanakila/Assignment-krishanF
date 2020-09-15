@@ -10,7 +10,7 @@ v12.14.1
 $ npm -v
 6.13.4
 
-# To Run the project
+# To Run The Project
 
 1) npm i
 2) ng serve
